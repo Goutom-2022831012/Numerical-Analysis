@@ -1,0 +1,4 @@
+🧮The Newton-Raphson Method is an efficient and widely used iterative technique for finding approximate roots of a real-valued function f(x) = 0. It starts with an initial guess x₀ and generates successively better approximations using the formula:
+xₙ₊₁ = xₙ − f(xₙ) / f′(xₙ)
+
+This method relies on both the function and its first derivative. At each step, it computes the tangent line to the curve at the current estimate and uses its x-intercept as the next estimate. The Newton-Raphson Method is fast and efficient but requires the derivative and a good initial guess. It may fail or diverge if the derivative is zero or the guess is poor.
