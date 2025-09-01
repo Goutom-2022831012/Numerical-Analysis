@@ -26,6 +26,10 @@ void falsePosition(double a, double b, double tol = 1e-4) {
         cout << i << "\t\t" << a << "\t" << f(a) << "\t"<< b << "\t" << f(b) << "\t" << c << "\t" << f(c) << "\t" << error << "\n";
         if (f(c) == 0.0)
             break;
+          // Check if root found
+        if (fabs(f(c)) < tol) {
+            break;
+        }
         if (f(a) * f(c) < 0)
             b = c;
         else
