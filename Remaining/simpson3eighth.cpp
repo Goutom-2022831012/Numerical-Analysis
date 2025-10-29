@@ -11,9 +11,9 @@ int main() {
 
      cin >> a;
     cin >> b;
-     cin >> n;
+    cin >> n;
 
-    if(n % 2 != 0) {
+    if(n % 3 != 0) {
         return 0;
     }
 
@@ -21,11 +21,11 @@ int main() {
     double sum = f(a) + f(b);
 
     for(int i = 1; i < n; i++) {
-        if(i % 2 == 0) sum += 2 * f(a + i*h);
-        else sum += 4 * f(a + i*h);
+        if(i % 3 == 0) sum += 2 * f(a + i*h);
+        else sum += 3 * f(a + i*h);
     }
 
-    double integral = (h/3.0) * sum;
+    double integral = (3*h/8.0) * sum;
     cout << fixed << setprecision(6);
     cout << "Approximate integral = " << integral << endl;
 
